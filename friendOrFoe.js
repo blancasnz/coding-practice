@@ -12,7 +12,7 @@ Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 function friend(friends){
 var myFriends = [];
   for(var i = 0; i< friends.length; i++){
-    if(friends[i].length === "four".length){
+    if(friends[i].length === 4){
       myFriends.push(friends[i]);
     }
   }
