@@ -19,10 +19,10 @@ program so that it works for any size, outputting a grid of the given width and 
 */
 
 var graph = "";
-var column = 8;
-var rows = 8;
-for ( var i = 0; i < rows; i++ ) {
-	for ( var j = 0; j < column; j++ ) {
+var size = 8;
+
+for ( var i = 0; i < size; i++ ) {
+	for ( var j = 0; j < size; j++ ) {
   		if ( (j + i)%2 === 0 ) {
     		graph += " ";
   		} else {
