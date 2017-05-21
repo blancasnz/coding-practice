@@ -11,13 +11,14 @@ rotate('hello', 2) -> 'lohel'
 rotate('hello', 3) -> 'llohe'
 rotate('hello', 4) -> 'elloh'
 
-Discovered to use % in order to deal with "n" being greater than the "str" length. Ex. if "n" is 5, then in 
-the for loop "str.length - n" in this ex. 5-5 = 0, then it would start at str[0], which is "h" and 
-it will go on to print "hello". However if "n" is 6, then "str.length - n" in this ex. will be 
-5-6 = -1. This will not work because there is no str[-1]. So if you were to loop "hello" six 
-times, you want to get "ohell" which is the same result as when you loop "hello" 1 time.  So by 
-getting the remainder of n/str.length, you are getting a positive number, and it also gives the 
-result you want! It's a pattern!
+Discovered % allows for a pattern solution.  When you loop "str", "n" amount of times, a pattern
+begins to show. Ex. looping "str" 3 times is the same as looping 8 times.  When you do 
+"n" % str.length, you create a newN, which stores the remainder.  In the case of 8%5, you get 3. 
+The pattern in which looping 8 times is the same as 3 times goes into effect. 
+str.length - newN, 5 - 3, gives you 2, the position where you want to start.  Then you can
+start adding that part of the string to your new empty string.  This sequence will work to find 
+a pattern with any number.  The second for loop is for when the first for loop no longer 
+works and it will give you the other part of the string you need.
 
 */
 
