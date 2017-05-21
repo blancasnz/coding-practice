@@ -17,6 +17,10 @@ to largest number, reverse will make it largest to smallest, join has to have it
 and will return the array into a string, Number is a constructor and will return the string as a
 number.
 
+In split, "" lets it know to split in between numbers. Other options you could have would be to 
+split the string according to the commas in place Ex. "hey, you, how's it going" it would split
+["hey", "you", "how's it going"] or other example is splitting using spaces " " as an indicator.
+
 */
 
 
