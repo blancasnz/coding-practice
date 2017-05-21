@@ -12,14 +12,19 @@ Input: 145263 Output: 654321
 
 Input: 1254859723 Output: 9875543221
 
+toString transforms n into a string, split returns an array, sort arranges from smallest number
+to largest number, reverse will make it largest to smallest, join has to have it's own variable
+and will return the array into a string, Number is a constructor and will return the string as a
+number.
+
 */
 
 
 function descendingOrder(n){
-  var n2 = n.toString();
-  arrayN2 = n2.split("");
-  arrayN2.sort();
-  arrayN2.reverse();
-  var output = arrayN2.join(""); 
+  var numberString = n.toString();
+  var numberArray = numberString.split("");
+  numberArray.sort();
+  numberArray.reverse();
+  var output = numberArray.join(""); 
   return Number(output);    
 }
