@@ -11,6 +11,10 @@ findOccurrences('i ate an apple', 'a') -> [2,6,9]
 findOccurrences('Hello, my name is Mr. Stkrdknmibalz', 'm') -> 
 [7, 12, 18, 29]
 
+In this solution I turned the string into all lowercase letters so it would find the character
+whether it was in uppercase or lowercase, however the solution could have that out in case you 
+wanted to particularly find a character in uppercase only or lowercase only.
+
 */
 
 var findOccurrences = function(str, ch) {
